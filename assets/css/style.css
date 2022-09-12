@@ -1,0 +1,16 @@
+body {
+    background: rgb(196 223 196);
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+img {
+    width: 80%;
+    padding: 20px;
+}
+
+.questions {
+    border: 1px solid gray;
+    padding: 30px;
+}

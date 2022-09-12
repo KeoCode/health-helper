@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Health Helper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <style>
+        h1,
+        h2,
+        h3 {
+            font-family: "Courgette", sans-serif;
+        }
+
+        div {
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+
+<body>
+    <h1>Health Helper</h1>
+    <div>
+        <h3>What is A TDEE (Total Daily Energy Expenditure) Calculator?</h3>
+
+        <p class="text-box">Total daily energy expenditure is the number of calories your body burns in a given day
+            taking everything into
+            account from sleep to digestion to exercise. TDEE calculators offer a way for you to figure out a close
+            approximation to the actual number of calories you burn in a day, which you can then use to structure a diet
+            for
+            building muscle or burning fat.</p>
+
+        <p> Through proper manipulation and application of your TDEE, you have the power to reshape your body in your
+            own
+            ideal image and never ever have to settle for another cookie cutter meal plan or diet protocol. When knowing
+            how
+            many calories you need to eat for muscle gain or fat loss, you can eat the foods you enjoy while adhering to
+            the
+            calorie and macronutrient goals you set.</p>
+
+        <p> The saying goes “with knowledge comes power.” Well, we’ve now given you the knowledge and power to craft
+            your
+            ideal physique.</p>
+
+        <h3>Take the Test and start being your best you!</h3>
+    </div>
+    <div class="pic">
+        <img src="assets/images/cooking.jpg">
+    </div>
+
+    <form class="questions">
+        <div>
+            <label><strong>Gender:</strong></label>
+            <br>
+
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+
+        </div>
+        <br>
+        <div>
+            <label for="weight"><strong>Weight (KG):</strong></label>
+            <input type="number" id="weight" name="weight" value="weight">
+        </div>
+        <br>
+        <div>
+            <label for="height"><strong>Height (CM):</strong></label>
+            <input type="number" id="height" name="weight" value="height">
+        </div>
+        <br>
+        <div>
+            <label for="age"><strong>Age:</strong></label>
+            <input type="number" id="age" name="age" value="age">
+        </div>
+
+        <br>
+        <div>
+            <label><strong>Activity Level:</strong></label>
+            <br>
+
+            <input type="radio" id="sedentary" name="activity-level" value="sedentary">
+            <label for="sedentary">Sedentary (little to no exercise + work a desk job)</label>
+
+
+            <br>
+
+
+            <input type="radio" id="lightly-active" name="activity-level" value="lightly-active">
+            <label for="lightly-active">Lightly Active (light exercise 1-3 days / week)</label>
+
+
+            <br>
+
+            <input type="radio" id="moderately-active" name="activity-level" value="moderately-active">
+            <label for="moderately-active">Moderately Active (moderate exercise 3-5 days / week)</label>
+
+            <br>
+
+
+            <input type="radio" id="very-active" name="activity-level" value="very-active">
+            <label for="very-active">Very Active (heavy exercise 6-7 days / week)</label>
+
+            <br>
+
+
+            <input type="radio" id="extemely-active" name="activity-level" value="extemely-active">
+            <label for="extemely-active">Extremely Active (very heavy exercise, hard labor job, training 2x /
+                day)</label>
+
+        </div>
+        <br>
+        <div>
+            <label><strong>Goal:</strong></label>
+            <br>
+
+            <input type="radio" id="loss" name="goal" value="loss">
+            <label for="loss">Weight Loss</label>
+
+
+            <input type="radio" id="maintain" name="goal" value="maintain">
+            <label for="maintain">Maintain Weight</label>
+
+
+            <input type="radio" id="gain" name="goal" value="gain">
+            <label for="gain">Weight Gain</label>
+
+        </div>
+        <br>
+        <div>
+
+            <input type="submit" value="Calculate now!">
+
+        </div>
+
+    </form>
+
+    <footer>
+
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
