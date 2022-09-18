@@ -11,13 +11,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     <style>
-        h1,
-        h2,
-        h3 {
+       
+        h1 {
             font-family: "Courgette", sans-serif;
         }
 
-        div {
+        h2, h3, div {
             font-family: 'Times New Roman', Times, serif;
         }
     </style>
@@ -51,7 +50,7 @@
         <h3>Take the Test and start being your best you!</h3>
     </div>
     <div class="pic">
-        <img src="assets/images/cooking.jpg">
+        <img src="assets/images/cooking.jpg" alt="Lady preparing vegtables">
     </div>
 
     <form class="questions">
@@ -59,27 +58,27 @@
             <label><strong>Gender:</strong></label>
             <br>
 
-            <input type="radio" id="male" name="gender" value="male">
+            <input type="radio" id="male" name="gender" value="male" required="required">
             <label for="male">Male</label>
 
-            <input type="radio" id="female" name="gender" value="female">
+            <input type="radio" id="female" name="gender" value="female" required="required">
             <label for="female">Female</label>
 
         </div>
         <br>
         <div>
             <label for="weight"><strong>Weight (KG):</strong></label>
-            <input type="number" id="weight" name="weight" value="weight">
+            <input type="number" id="weight" name="weight" value="weight" required>
         </div>
         <br>
         <div>
             <label for="height"><strong>Height (CM):</strong></label>
-            <input type="number" id="height" name="weight" value="height">
+            <input type="number" id="height" name="weight" value="height" required>
         </div>
         <br>
         <div>
             <label for="age"><strong>Age:</strong></label>
-            <input type="number" id="age" name="age" value="age">
+            <input type="number" id="age" name="age" value="age" required>
         </div>
 
         <br>
@@ -87,32 +86,32 @@
             <label><strong>Activity Level:</strong></label>
             <br>
 
-            <input type="radio" id="sedentary" name="activity-level" value="sedentary">
+            <input type="radio" id="sedentary" name="activity-level" value="sedentary" required="required">
             <label for="sedentary">Sedentary (little to no exercise + work a desk job)</label>
 
 
             <br>
 
 
-            <input type="radio" id="lightly-active" name="activity-level" value="lightly-active">
+            <input type="radio" id="lightly-active" name="activity-level" value="lightly-active" required="required">
             <label for="lightly-active">Lightly Active (light exercise 1-3 days / week)</label>
 
 
             <br>
 
-            <input type="radio" id="moderately-active" name="activity-level" value="moderately-active">
+            <input type="radio" id="moderately-active" name="activity-level" value="moderately-active" required="required">
             <label for="moderately-active">Moderately Active (moderate exercise 3-5 days / week)</label>
 
             <br>
 
 
-            <input type="radio" id="very-active" name="activity-level" value="very-active">
+            <input type="radio" id="very-active" name="activity-level" value="very-active" required="required">
             <label for="very-active">Very Active (heavy exercise 6-7 days / week)</label>
 
             <br>
 
 
-            <input type="radio" id="extemely-active" name="activity-level" value="extemely-active">
+            <input type="radio" id="extemely-active" name="activity-level" value="extemely-active" required="required">
             <label for="extemely-active">Extremely Active (very heavy exercise, hard labor job, training 2x /
                 day)</label>
 
@@ -122,15 +121,18 @@
             <label><strong>Goal:</strong></label>
             <br>
 
-            <input type="radio" id="loss" name="goal" value="loss">
-            <label for="loss">Weight Loss</label>
+            <input type="radio" id="loseOne" name="goal" value="loseOne" required="required">
+            <label for="loseOne">Weight Loss - 1 pound a week</label>
+            
+            <input type="radio" id="loseTwo" name="goal" value="loseTwo" required="required">
+            <label for="loseTwo">Weight Loss - 2 pounds a week</label>
 
 
-            <input type="radio" id="maintain" name="goal" value="maintain">
+            <input type="radio" id="maintain" name="goal" value="maintain" required="required">
             <label for="maintain">Maintain Weight</label>
 
 
-            <input type="radio" id="gain" name="goal" value="gain">
+            <input type="radio" id="gain" name="goal" value="gain" required="required">
             <label for="gain">Weight Gain</label>
 
         </div>

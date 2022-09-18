@@ -5,7 +5,7 @@ let age = document.getElementById('age').value;
 let activityLevel = document.getElementById('activity-level').value;
 let goal = document.getElementById('goal').value;
 
-let
+let bmr, tdee;
 
 addEventListener
 
@@ -15,6 +15,7 @@ function calBmr() {
       } else {
          bmr = 66 + (13.7 * weight) + (5 * height) - (6.8 * age);
       }
+      console.log(bmr);
     }
     
     function calTdee() {
@@ -22,10 +23,14 @@ function calBmr() {
     }
     
    function calLossOne() {
-    loseOne = tdee - 500;
-    carbsLoseOne   = (loseOne * 0.3)
+    let loseOne = tdee - 500;
+    let carbsLoseOne   = (loseOne * 0.3) / 4;
+    let fatLoseOne = (loseOne * 0.3) / 9;
+    let protienLoseOne = (loseOne * 0.4) /4;
     console.log(loseOne);
     console.log(carbsLoseOne);
+    console.log(fatLoseOne);
+    console.log(protienLoseOne);
     }
     
     function calLossTwo() { 
@@ -53,22 +58,6 @@ function calNEAT() {
 }
 
 function calTEA() {
-
-}
-
-function calMacros() {
-
-}
-
-function calLoss() {
-
-}
-
-function calGain() {
-
-}
-
-function calMaintain() {
 
 }
 
