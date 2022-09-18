@@ -14,3 +14,9 @@ img {
     border: 1px solid gray;
     padding: 30px;
 }
+
+#form-box {
+    padding: 5%;
+    margin: auto;
+
+}

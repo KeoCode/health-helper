@@ -11,16 +11,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     <style>
-       
         h1 {
             font-family: "Courgette", sans-serif;
         }
 
-        h2, h3, div {
+        h2,
+        h3,
+        div {
             font-family: 'Times New Roman', Times, serif;
         }
     </style>
-   
+
 </head>
 
 <body>
@@ -43,110 +44,112 @@
             the
             calorie and macronutrient goals you set.</p>
 
-        <p> The saying goes “with knowledge comes power.” Well, we have now given you the knowledge and power to craft
-            your
-            ideal physique.</p>
+        <p> The saying goes “with knowledge comes power.” Well, we will now give you the knowledge and power to craft
+            your ideal physique.</p>
 
-        <h3>Take the Test and start being your best you!</h3>
     </div>
     <div class="pic">
         <img src="assets/images/cooking.jpg" alt="Lady preparing vegtables">
     </div>
-<section>
-    <form id="form">
-        <div>
-            <label><strong>Gender:</strong></label>
+    <section id="form-box">
+        <h3>Take the Test and take the first step towards a healthier you!</h3>
+        <form id="form" method="POST">
+            <div>
+                <label><strong>Gender:</strong></label>
+                <br>
+
+                <input type="radio" id="gender" name="gender" value="male" required="required">
+                <label for="male">Male</label>
+
+                <input type="radio" id="gender" name="gender" value="female" required="required">
+                <label for="female">Female</label>
+
+            </div>
             <br>
-
-            <input type="radio" id="gender" name="gender" value="male" required="required">
-            <label for="male">Male</label>
-
-            <input type="radio" id="gender" name="gender" value="female" required="required">
-            <label for="female">Female</label>
-
-        </div>
-        <br>
-        <div>
-            <label for="weight"><strong>Weight (KG):</strong></label>
-            <input type="text" id="weight" name="weight" required>
-        </div>
-        <br>
-        <div>
-            <label for="height"><strong>Height (CM):</strong></label>
-            <input type="text" id="height" name="height" required>
-        </div>
-        <br>
-        <div>
-            <label for="age"><strong>Age:</strong></label>
-            <input type="text" id="age" name="age" required>
-        </div>
-
-        <br>
-        <div>
-            <label><strong>Activity Level:</strong></label>
+            <div>
+                <label for="weight"><strong>Weight (KG):</strong></label>
+                <input type="text" id="weight" name="weight" required>
+            </div>
             <br>
-
-            <input type="radio" id="activity-level" name="activity-level" value="sedentary" required="required">
-            <label for="sedentary">Sedentary (little to no exercise + work a desk job)</label>
-
+            <div>
+                <label for="height"><strong>Height (CM):</strong></label>
+                <input type="text" id="height" name="height" required>
+            </div>
+            <br>
+            <div>
+                <label for="age"><strong>Age:</strong></label>
+                <input type="text" id="age" name="age" required>
+            </div>
 
             <br>
+            <div>
+                <label><strong>Activity Level:</strong></label>
+                <br>
+
+                <input type="radio" id="activity-level" name="activity-level" value="sedentary" required="required">
+                <label for="sedentary">Sedentary (little to no exercise + work a desk job)</label>
 
 
-            <input type="radio" id="activity-level" name="activity-level" value="lightly-active" required="required">
-            <label for="lightly-active">Lightly Active (light exercise 1-3 days / week)</label>
+                <br>
 
 
+                <input type="radio" id="activity-level" name="activity-level" value="lightly-active"
+                    required="required">
+                <label for="lightly-active">Lightly Active (light exercise 1-3 days / week)</label>
+
+
+                <br>
+
+                <input type="radio" id="activity-level" name="activity-level" value="moderately-active"
+                    required="required">
+                <label for="moderately-active">Moderately Active (moderate exercise 3-5 days / week)</label>
+
+                <br>
+
+
+                <input type="radio" id="activity-level" name="activity-level" value="very-active" required="required">
+                <label for="very-active">Very Active (heavy exercise 6-7 days / week)</label>
+
+                <br>
+
+
+                <input type="radio" id="activity-level" name="activity-level" value="extemely-active"
+                    required="required">
+                <label for="extemely-active">Extremely Active (very heavy exercise, hard labor job, training 2x /
+                    day)</label>
+
+            </div>
             <br>
+            <div>
+                <label><strong>Goal:</strong></label>
+                <br>
 
-            <input type="radio" id="activity-level" name="activity-level" value="moderately-active" required="required">
-            <label for="moderately-active">Moderately Active (moderate exercise 3-5 days / week)</label>
+                <input type="radio" id="goal" name="goal" value="loseOne" required="required">
+                <label for="loseOne">Weight Loss - 1 pound a week</label>
 
+                <input type="radio" id="goal" name="goal" value="loseTwo" required="required">
+                <label for="loseTwo">Weight Loss - 2 pounds a week</label>
+
+
+                <input type="radio" id="goal" name="goal" value="maintain" required="required">
+                <label for="maintain">Maintain Weight</label>
+
+
+                <input type="radio" id="goal" name="goal" value="gain" required="required">
+                <label for="gain">Weight Gain</label>
+
+            </div>
             <br>
+            <div>
 
+                <input type="submit" value="Calculate now!">
 
-            <input type="radio" id="activity-level" name="activity-level" value="very-active" required="required">
-            <label for="very-active">Very Active (heavy exercise 6-7 days / week)</label>
+            </div>
 
-            <br>
-
-
-            <input type="radio" id="activity-level" name="activity-level" value="extemely-active" required="required">
-            <label for="extemely-active">Extremely Active (very heavy exercise, hard labor job, training 2x /
-                day)</label>
-
-        </div>
-        <br>
-        <div>
-            <label><strong>Goal:</strong></label>
-            <br>
-
-            <input type="radio" id="goal" name="goal" value="loseOne" required="required">
-            <label for="loseOne">Weight Loss - 1 pound a week</label>
-            
-            <input type="radio" id="goal" name="goal" value="loseTwo" required="required">
-            <label for="loseTwo">Weight Loss - 2 pounds a week</label>
-
-
-            <input type="radio" id="goal" name="goal" value="maintain" required="required">
-            <label for="maintain">Maintain Weight</label>
-
-
-            <input type="radio" id="goal" name="goal" value="gain" required="required">
-            <label for="gain">Weight Gain</label>
-
-        </div>
-        <br>
-        <div>
-
-            <input type="submit" value="Calculate now!">
-
-        </div>
-
-    </form>
-</section>
+        </form>
+    </section>
     <footer>
-
+        <p>Disclaimer: Health Helper is for informational purposes only. Consult a healthcare provider before making health decisions.</p>    
     </footer>
 
     <script src="assets/js/script.js"></script>
