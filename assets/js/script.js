@@ -52,13 +52,13 @@ form.addEventListener('submit', function (event) {
         }
         console.log(parseInt(tdee));
 
-        // work out calories to lose one pound per week aswell as calories and gram for macros
+        // work out calories for each goal aswell as calories and gram for macros
         if (goal === "loseOne") {
             calories = tdee - 500;
         } else if (goal === "loseTwo") {
             calories = tdee - 1000;
         } else if (goal === "gain") {
-            calories = tdee + 500;
+            calories = tdee + 300;
         } else if (goal === "maintain") {
             calories = tdee;
         }
@@ -72,7 +72,7 @@ form.addEventListener('submit', function (event) {
 
         let proteinCal = calories * 0.4;
         let proteinGram = carbsCal / 4;
-
+//Log results
         console.log(parseInt(calories));
         console.log(parseInt(carbsCal));
         console.log(parseInt(carbGram));
@@ -81,5 +81,5 @@ form.addEventListener('submit', function (event) {
         console.log(parseInt(proteinCal));
         console.log(parseInt(proteinGram));
     }
-    window.location.replace("results.html");
+    
 });
