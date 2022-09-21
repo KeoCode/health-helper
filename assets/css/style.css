@@ -20,3 +20,13 @@ img {
     margin: auto;
 
 }
+
+h1 {
+    font-family: "Courgette", sans-serif;
+}
+
+h2,
+h3,
+div {
+    font-family: 'Times New Roman', Times, serif;
+}
