@@ -16,6 +16,19 @@
 <body>
     <main>
     <h1>Health Helper</h1>
+
+    <h2>Your Results are in!</h2>
+    <div>Your BMR:<span id = "bmrResult"></span></div>
+    <div>Your TDEE:<span id = "tdeeResult"></span></div>
+    <div>Your Calorie Need to meet your Goal:<span id = "calVal"></span></div>
+    <h2>Your Macros Broken down</h2>
+    <div>Calories in carbohydrates:<span id = "carbCalVal"></span></div>
+    <div>Grams in carbohydrates:<span id = "carbGramVal"></span></div>
+    <div>Calories in fats:<span id = "fatCalVal"></span></div>
+    <div>Grams in fats:<span id = "fatGramVal"></span></div>
+    <div>Calories in protein:<span id = "proteinCalVal"></span></div>
+    <div>Grams in protein:<span id = "proteinGramVal"></span></div>
+
     <h3>What is TDEE?</h3>
     <p>Wondering what is TDEE? TDEE stands for Total Daily Energy Expenditure. It is the total number of calories you
         burn in a given day. </p>
@@ -48,7 +61,27 @@
             health decisions.</p>
     </footer>
 
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js">
+        const bmrResult = sessionStorage.getItem('bmr');
+const tdeeResult = sessionStorage.getItem('tdee');
+const calVal = sessionStorage.getItem('calories');
+const carbCalVal = sessionStorage.getItem('carbsCal');
+const carbGramVal = sessionStorage.getItem('carbGram');
+const fatCalVal = sessionStorage.getItem('fatCal');
+const fatGramVal = sessionStorage.getItem('fatGram');
+const proteinCalVal = sessionStorage.getItem('proteinCal');
+const proteinGramVal = sessionStorage.getItem('proteinGram');
+
+document.getElementById('bmr').textContent = bmrResult;
+document.getElementById('tdee').textContent = tdeeResult;
+document.getElementById('calories').textContent = calVal;
+document.getElementById('carbsCal').textContent = carbCalVal;
+document.getElementById('carbGram').textContent = carbGramVal;
+document.getElementById('fatCal').textContent = fatCalVal;
+document.getElementById('fatGram').textContent = fatGramVal;
+document.getElementById('proteinCal').textContent = proteinCalVal;
+document.getElementById('proteinGram').textContent = proteinGramVal;
+    </script>
 </main>
 </body>
 
