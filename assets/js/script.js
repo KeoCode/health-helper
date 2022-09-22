@@ -2,9 +2,9 @@ var form = document.getElementById('form');
 
 function calTdee() {
 
-    var bmr = 0;
+    let bmr = 0;
     let tdee = 0;
-    var calories = 0;
+    let calories = 0;
 
 
     //Calculate Basal metabolic Rate (BMR) by determining if it is female or male and calculating accordingly.
@@ -13,11 +13,11 @@ function calTdee() {
     } else {
         bmr = 66 + (13.7 * weight) + (5 * height) - (6.8 * age);
     }
-    console.log(bmr);
+   // console.log(bmr);
 
 
 
-    //Get TDEE (Total Daily Energy Expenditure), BMr times activity level
+    //Get TDEE (Total Daily Energy Expenditure), BMr times activity level orignal
     // if (activityLevel === "sedentary") {
     //     tdee = bmr * 1.2;
     // } else if (activityLevel === "lightly-active") {
@@ -30,8 +30,9 @@ function calTdee() {
     //     tdee = bmr * 1.9;
     // }
 
+    //Get TDEE (Total Daily Energy Expenditure), BMr times activity level
     let tdeeMap = {
-        sedentary: bmr * 1.2,
+        "sedentary": bmr * 1.2,
         "lightly-active": bmr * 1.375,
         "moderately-active": bmr * 1.55,
         "very-active": bmr * 1.725,
@@ -41,19 +42,28 @@ function calTdee() {
     tdee = tdeeMap[activityLevel];
 
 
-    console.log(parseInt(tdee));
+   // console.log(parseInt(tdee));
 
-    // work out calories for each goal
-    if (goal === "loseOne") {
-        calories = tdee - 500;
-    } else if (goal === "loseTwo") {
-        calories = tdee - 1000;
-    } else if (goal === "gain") {
-        calories = tdee + 300;
-    } else if (goal === "maintain") {
-        calories = tdee;
-    }
-    console.log(parseInt(calories));
+    let calorieMap = {
+        "loseOne": tdee - 500,
+        "loseTwo": tdee - 1000,
+        "gain": tdee + 300,
+        "maintain": tdee,
+    };
+
+    calories = calorieMap[goal];
+
+    // work out calories for each goal orginal
+    // if (goal === "loseOne") {
+    //     calories = tdee - 500;
+    // } else if (goal === "loseTwo") {
+    //     calories = tdee - 1000;
+    // } else if (goal === "gain") {
+    //     calories = tdee + 300;
+    // } else if (goal === "maintain") {
+    //     calories = tdee;
+    // }
+    // console.log(parseInt(calories));
 
 
     // Workout calories and grams for macros
@@ -67,13 +77,13 @@ function calTdee() {
     var proteinGram = carbsCal / 4;
 
     //Log results to console to ensure is correctly calculated
-    console.log(parseInt(calories));
-    console.log(parseInt(carbsCal));
-    console.log(parseInt(carbGram));
-    console.log(parseInt(fatCal));
-    console.log(parseInt(fatGram));
-    console.log(parseInt(proteinCal));
-    console.log(parseInt(proteinGram));
+    // console.log(parseInt(calories));
+    // console.log(parseInt(carbsCal));
+    // console.log(parseInt(carbGram));
+    // console.log(parseInt(fatCal));
+    // console.log(parseInt(fatGram));
+    // console.log(parseInt(proteinCal));
+    // console.log(parseInt(proteinGram));
 }
 
 //Form Event Listener
@@ -90,12 +100,13 @@ form.addEventListener('submit', function (event) {
     let activityLevel = document.querySelector('input[name="activity-level"]:checked').value;
     let goal = document.querySelector('input[name="goal"]:checked').value;
 
-    console.log(gender);
-    console.log(weight);
-    console.log(height);
-    console.log(age);
-    console.log(activityLevel);
-    console.log(goal);
+    //Make sure we get the correct values
+    // console.log(gender);
+    // console.log(weight);
+    // console.log(height);
+    // console.log(age);
+    // console.log(activityLevel);
+    // console.log(goal);
 
     calTdee();
 
