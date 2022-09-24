@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A calculator that helps workout the calorie and macro intake for your goals">
+    <meta name="keywords" content="calorie counting, TDEE, BMR,  Macro, calculator, healthy, weight loss, weight gain, weight maintaince">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Health Helper</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,10 +19,10 @@
 <body>
     <main>
         <h1>Health Helper</h1>
-        <div>
-            <h3>What is A TDEE (Total Daily Energy Expenditure) Calculator?</h3>
+        <div class="info-box">
+            <h2>What is A TDEE (Total Daily Energy Expenditure) Calculator?</h2>
 
-            <p class="text-box">Total daily energy expenditure is the number of calories your body burns in a given day
+            <p>Total daily energy expenditure is the number of calories your body burns in a given day
                 taking everything into
                 account from sleep to digestion to exercise. TDEE calculators offer a way for you to figure out a close
                 approximation to the actual number of calories you burn in a day, which you can then use to structure a
@@ -44,37 +46,35 @@
                 your ideal physique.</p>
 
         </div>
-        <div class="pic">
             <img src="assets/images/cooking.jpg" alt="Lady preparing vegtables">
-        </div>
-        <section id="form-box">
+        <div id="form-box">
             <h3>Take the Test and take the first step towards a healthier you!</h3>
             <form id="form">
                 <div>
                     <label><strong>Gender:</strong></label>
                     <br>
 
-                    <input type="radio" id="female" name="gender" value="male" required="required">
+                    <input type="radio" id="male" name="gender" value="male" required="required">
                     <label for="male">Male</label>
 
-                    <input type="radio" id="male" name="gender" value="female" required="required">
+                    <input type="radio" id="female" name="gender" value="female" required="required">
                     <label for="female">Female</label>
 
                 </div>
                 <br>
                 <div>
                     <label for="weight"><strong>Weight (KG):</strong></label>
-                    <input type="text" id="weight" name="weight" required>
+                    <input type="text" id="weight" name="weight" required minlength="2" maxlength="3">
                 </div>
                 <br>
                 <div>
                     <label for="height"><strong>Height (CM):</strong></label>
-                    <input type="text" id="height" name="height" required>
+                    <input type="text" id="height" name="height" required minlength="2" maxlength="3">
                 </div>
                 <br>
                 <div>
                     <label for="age"><strong>Age:</strong></label>
-                    <input type="text" id="age" name="age" required>
+                    <input type="text" id="age" name="age" required minlength="2" maxlength="3">
                 </div>
 
                 <br>
@@ -138,12 +138,12 @@
                 <br>
                 <div>
 
-                    <input type="submit" value="Calculate now!">
+                    <input type="submit" value="Calculate now!" id="button">
 
                 </div>
 
             </form>
-        </section>
+        </div>
         <footer>
             <p>Disclaimer: Health Helper is for informational purposes only. Consult a healthcare provider before making
                 health decisions.</p>

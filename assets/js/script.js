@@ -38,14 +38,21 @@ const goal = event.target.goal.value;
 
 
         //Calculate Basal metabolic Rate (BMR) by determining if it is female or male and calculating accordingly.
-        if (gender === 'female') {
-            bmr = 655 + (9.6 * weight) + (1.8 * height) - (4.7 * age);
-        } else {
-            bmr = 66 + (13.7 * weight) + (5 * height) - (6.8 * age);
-        }
-         console.log(bmr);
+        // if (gender === 'female') {
+        //     bmr = 655 + (9.6 * weight) + (1.8 * height) - (4.7 * age);
+        // } else {
+        //     bmr = 66 + (13.7 * weight) + (5 * height) - (6.8 * age);
+        // }
+       
 
+        let bmrMap = {
+            "female" : 655 + (9.6 * weight) + (1.8 * height) - (4.7 * age),
+            "male" : 66 + (13.7 * weight) + (5 * height) - (6.8 * age),
+        };
 
+        bmr = bmrMap[gender];
+
+        console.log(bmr);
 
         //Get TDEE (Total Daily Energy Expenditure), BMr times activity level orignal
         // if (activityLevel === "sedentary") {
