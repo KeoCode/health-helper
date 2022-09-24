@@ -10,79 +10,69 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
-   
+
 </head>
 
 <body>
     <main>
-    <h1>Health Helper</h1>
+        <h1>Health Helper</h1>
 
-    <h2>Your Results are in!</h2>
-    <div>Your BMR:<span id = "bmrResult"></span></div>
-    <div>Your TDEE:<span id = "tdeeResult"></span></div>
-    <div>Your Calorie Need to meet your Goal:<span id = "calVal"></span></div>
-    <h2>Your Macros Broken down</h2>
-    <div>Calories in carbohydrates:<span id = "carbCalVal"></span></div>
-    <div>Grams in carbohydrates:<span id = "carbGramVal"></span></div>
-    <div>Calories in fats:<span id = "fatCalVal"></span></div>
-    <div>Grams in fats:<span id = "fatGramVal"></span></div>
-    <div>Calories in protein:<span id = "proteinCalVal"></span></div>
-    <div>Grams in protein:<span id = "proteinGramVal"></span></div>
+        <h2>Your Results are in!</h2>
 
-    <h3>What is TDEE?</h3>
-    <p>Wondering what is TDEE? TDEE stands for Total Daily Energy Expenditure. It is the total number of calories you
-        burn in a given day. </p>
+        <div>Your TDEE:<span id="tdee"></span></div>
+        <div>Your BMR:<span id="bmr"></span></div>
+        <div>Your Calorie Need to meet your Goal:<span id="calories"></span></div>
+        <h2>Your Macros Broken down</h2>
+        <div>Calories in carbohydrates:<span id="carbsCal"></span></div>
+        <div>Grams in carbohydrates:<span id="carbGram"></span></div>
+        <div>Calories in fats:<span id="fatCal"></span></div>
+        <div>Grams in fats:<span id="fatGram"></span></div>
+        <div>Calories in protein:<span id="proteinCal"></span></div>
+        <div>Grams in protein:<span id="proteinGram"></span></div>
 
-    <h3>Basal Metabolic Rate (BMR)</h3>
-    <p>Basal metabolic rate refers to the number of calories your body burns each day to keep you alive. BMR does not
-        include physical activity, the process of digestion, or things like walking from one room to another.</p>
+        <h3>What is TDEE?</h3>
+        <p>Wondering what is TDEE? TDEE stands for Total Daily Energy Expenditure. It is the total number of calories
+            you
+            burn in a given day. </p>
 
-    <p> Basically, BMR is the number of calories your body would expend in a 24 hour period if all you did was lay in
-        bed all day long. This is the absolute bare minimum of calories it takes to ensure your survival.</p>
+        <h3>Basal Metabolic Rate (BMR)</h3>
+        <p>Basal metabolic rate refers to the number of calories your body burns each day to keep you alive. BMR does
+            not
+            include physical activity, the process of digestion, or things like walking from one room to another.</p>
+
+        <p> Basically, BMR is the number of calories your body would expend in a 24 hour period if all you did was lay
+            in
+            bed all day long. This is the absolute bare minimum of calories it takes to ensure your survival.</p>
 
         <h3>What are Macros</h3>
-    <p>The idea behind the macro diet is pretty simple: Instead of staying under a calorie threshold, you focus on
-        getting a certain number (typically grams) of macronutrients—protein, carbohydrates, and fat—instead. Depending
-        on your goals, you can adjust the amounts of protein, carbohydrates, and fats you consume to slim down, build
-        muscle, or maintain your weight.</p>
+        <p>The idea behind the macro diet is pretty simple: Instead of staying under a calorie threshold, you focus on
+            getting a certain number (typically grams) of macronutrients—protein, carbohydrates, and fat—instead.
+            Depending
+            on your goals, you can adjust the amounts of protein, carbohydrates, and fats you consume to slim down,
+            build
+            muscle, or maintain your weight.</p>
 
         <h3>For Example:</h3>
         <p>
-            Carbohydrates: Healthy carbs typically contain lots of fiber, including whole grains, legumes, leafy greens, potatoes, and fruit.
+            Carbohydrates: Healthy carbs typically contain lots of fiber, including whole grains, legumes, leafy greens,
+            potatoes, and fruit.
         </p>
         <p>
-            Proteins: Good picks for healthy, lean proteins: chicken, turkey grass-fed beef, fatty fish (like salmon and mackerel), eggs, and plant-based options like beans and chickpeas.
+            Proteins: Good picks for healthy, lean proteins: chicken, turkey grass-fed beef, fatty fish (like salmon and
+            mackerel), eggs, and plant-based options like beans and chickpeas.
         </p>
         <p>
             Fats: Satiating, healthy fats include olive oil, avocado, nuts, and seeds.
         </p>
-    <footer>
-        <p>Disclaimer: Health Helper is for informational purposes only. Consult a healthcare provider before making
-            health decisions.</p>
-    </footer>
+        <footer>
+            <p>Disclaimer: Health Helper is for informational purposes only. Consult a healthcare provider before making
+                health decisions.</p>
+        </footer>
 
-    <script src="assets/js/script.js">
-        const bmrResult = sessionStorage.getItem('bmr');
-const tdeeResult = sessionStorage.getItem('tdee');
-const calVal = sessionStorage.getItem('calories');
-const carbCalVal = sessionStorage.getItem('carbsCal');
-const carbGramVal = sessionStorage.getItem('carbGram');
-const fatCalVal = sessionStorage.getItem('fatCal');
-const fatGramVal = sessionStorage.getItem('fatGram');
-const proteinCalVal = sessionStorage.getItem('proteinCal');
-const proteinGramVal = sessionStorage.getItem('proteinGram');
+        <script src="assets/js/results.js">
 
-document.getElementById('bmr').textContent = bmrResult;
-document.getElementById('tdee').textContent = tdeeResult;
-document.getElementById('calories').textContent = calVal;
-document.getElementById('carbsCal').textContent = carbCalVal;
-document.getElementById('carbGram').textContent = carbGramVal;
-document.getElementById('fatCal').textContent = fatCalVal;
-document.getElementById('fatGram').textContent = fatGramVal;
-document.getElementById('proteinCal').textContent = proteinCalVal;
-document.getElementById('proteinGram').textContent = proteinGramVal;
-    </script>
-</main>
+        </script>
+    </main>
 </body>
 
 </html>
