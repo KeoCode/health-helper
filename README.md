@@ -4,6 +4,8 @@ Health Helper is a site consisting of HTML, CSS and Javascript. It is a fully in
 
 Health helper  is a site that can be used by anyone, it's aim is to educate the user on the correct calorie intake based on factors including age, height, weight, gender as well as fitness level and their goals. Using javascript, it will take all information input in the form and calculate calorie and macronutrients the user should aim for to become the healiest version of themselves.
 
+![AmIResponsive](assets/images/responsiveshot.png)
+
 The results are an average based on the Harris-Benedict Equation for calculating your Basal Metabolic Rate (BMR). Your BMR refers to the number of calories your body burns each day to keep you alive in a 24 hour period if all you did was lay in bed all day long. This is the absolute bare minimum of calories it takes to ensure your survival. 
 
 You Total Daily Energy Expenditure (TDEE) is the total number of calories you burn in a given day. This is worked out by what is known as the Katch-McArdle multipliers. This takes into account your BMR, Thermic Effect of Food, Non-Exercise Activity Thermogenesis and Thermic Effect of Activity (Exercise). Basically, it estimates the amount of calories you use in a day by not just your BMR but by taking into account the amount of calorie you burn for food digestion (Thermic Effect of Food or TEF), the calories burned by daily movement eg walking around the house / office / to and from the car etc (Non-Exercise Activity Thermogenesis or NEAT)and lastly, the number of calories burned as a result of exercise (Thermic Effect of Activity or TEA).
@@ -65,6 +67,8 @@ This Is brief intoduction in to what the site is about and about what it will ca
 - I have commented out the console log's in my code but i reguarly use the to double check the formula's are correct.
 
 - The Screen is responsive as can be seen here in the AmIREsponsive screen shots on all tested devices.
+
+![AmIResponsive](assets/images/responsiveshot.png)
 
 - In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
