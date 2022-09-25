@@ -79,7 +79,7 @@ const goal = event.target.goal.value;
         tdee = tdeeMap[activityLevel];
 
 
-         console.log(parseInt(tdee));
+        //  console.log(parseInt(tdee));
 
         // work out calories for each goal
         let calorieMap = {
@@ -89,7 +89,7 @@ const goal = event.target.goal.value;
             "maintain": tdee,
         };
 
-        calories = calorieMap[goal];
+        // calories = calorieMap[goal];
 
         // work out calories for each goal orginal
         // if (goal === "loseOne") {
@@ -115,13 +115,13 @@ const goal = event.target.goal.value;
         let proteinGram = carbsCal / 4;
 
         //Log results to console to ensure is correctly calculated
-        console.log(parseInt(calories));
-        console.log(parseInt(carbsCal));
-        console.log(parseInt(carbGram));
-        console.log(parseInt(fatCal));
-        console.log(parseInt(fatGram));
-        console.log(parseInt(proteinCal));
-        console.log(parseInt(proteinGram));
+        // console.log(parseInt(calories));
+        // console.log(parseInt(carbsCal));
+        // console.log(parseInt(carbGram));
+        // console.log(parseInt(fatCal));
+        // console.log(parseInt(fatGram));
+        // console.log(parseInt(proteinCal));
+        // console.log(parseInt(proteinGram));
 
         const bmrValue = parseInt(bmr);
         const tdeeValue = parseInt(tdee);

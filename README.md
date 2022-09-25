@@ -1,108 +1,120 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Health Helper
 
-Welcome KeoCode,
+Health Helper is a site consisting of HTML, CSS and Javascript. It is a fully interactive javascript based calculator to help calculate calories needed to meet your specified goal. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Health helper  is a site that can be used by anyone, it's aim is to educate the user on the correct calorie intake based on factors including age, height, weight, gender as well as fitness level and their goals. Using javascript, it will take all information input in the form and calculate calorie and macronutrients the user should aim for to become the healiest version of themselves.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+The results are an average based on the Harris-Benedict Equation for calculating your Basal Metabolic Rate (BMR). Your BMR refers to the number of calories your body burns each day to keep you alive in a 24 hour period if all you did was lay in bed all day long. This is the absolute bare minimum of calories it takes to ensure your survival. 
 
-## Gitpod Reminders
+You Total Daily Energy Expenditure (TDEE) is the total number of calories you burn in a given day. This is worked out by what is known as the Katch-McArdle multipliers. This takes into account your BMR, Thermic Effect of Food, Non-Exercise Activity Thermogenesis and Thermic Effect of Activity (Exercise). Basically, it estimates the amount of calories you use in a day by not just your BMR but by taking into account the amount of calorie you burn for food digestion (Thermic Effect of Food or TEF), the calories burned by daily movement eg walking around the house / office / to and from the car etc (Non-Exercise Activity Thermogenesis or NEAT)and lastly, the number of calories burned as a result of exercise (Thermic Effect of Activity or TEA).
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+Based on the Goal you have selected Health Helper will advise the calories you should aim for to reach that goal eg losing one pound per week means being 3500 calories in defict so TDEE less 500 calories a day should get you close to that lose every week.
 
-`python3 -m http.server`
+Lastly, Health Helper will go one step futher to give you the best chance at success by breaking down the best ratio of your Macronutrients. By Tracking and meeting macro targets it not only be priortising nutrient dense foods but can supply your body with exactly what it needs for fuel. The Main 3 Macros are Fats, Carbohydrates and Protein. The calculater will tell how much of each you should use in both Calories amounts and Gram amounts to make it twice as accessable to track.
 
-A blue button should appear to click: _Make Public_,
+![Screenshot of Main PAge](/assets/images/siteScreenshot.png)
 
-Another blue button should appear to click: _Open Browser_.
+### Existing Features
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- __The Health Helper Heading__
 
-A blue button should appear to click: _Make Public_,
+  - Featured at the top of the page, the Health Helper heading, which is simple clean and contracting with the background in a different font to the rest of the page.
 
-Another blue button should appear to click: _Open Browser_.
+  ![Heading](/assets/images/heading.png)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- __The Introduction Paragraph__
 
-To log into the Heroku toolbelt CLI:
+This Is brief intoduction in to what the site is about and about what it will calculate. 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+![Introduction Text](/assets/images/introText.png)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- __The image__
 
-------
+ An Image of a woman preparing healthy food to break up the text and to reinforce the idea that this site is recommending healthy lifestyle.
 
-## Release History
+![Main Image](/assets/images/imgshot.png)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+- __The Form Area__
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+  - This section is where the user input their data and submit it so it will run the calculations just before being redirected to the results page.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+![Form Section](/assets/images/formshot.png)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+- __The Footer Area__
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+  - Basic Footer with a disclaimer to consult a doctor for any health decisions.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+  ![Footer Section](/assets/images/footer.png)
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+- __The result page__
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+- The user will be redirected to the results page and using session storage, it will display the results of the calculations.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+![Result Page](/assets/images/resultspage.png)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+- __The Results explained Area__
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+  - A break down of what each result means and is explained so can action with the results.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+  ![Result info Text](/assets/images/resultInfo.png)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## Testing 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+- I Have added all Form fields as a requirement as all data is needed to make accurate calculations, I also have added a minimum length and a max length to certain fields to ensure it will validate that the correct data is entered inte right field.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+- I have commented out the console log's in my code but i reguarly use the to double check the formula's are correct.
 
-------
+- The Screen is responsive as can be seen here in the AmIREsponsive screen shots on all tested devices.
 
-## FAQ about the uptime script
+- In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
-**Why have you added this script?**
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
 
-**How will this affect me?**
+### Validator Testing 
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+- HTML
+    - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-maths%2F)
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+    ![HTML Validation](/assets/images/htmlValidatorScreenshot.png)
+- CSS
+    - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-maths%252F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+![CSS Validation](/assets/images/cssValidatorScreenshot.png)
 
-**So….?**
+- JavaScript
+    - No errors were found when passing through the official [Jshint validator](https://jshint.com/)
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+![Javascript Validation](/assets/images/jshintScreenshot.png)
 
-**Can I opt out?**
+- Lighthouse Accessibility testing
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+![Lighthouse results](/assets/images/lighthouseScreenshot.png)
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+## Deployment
 
-**Anything more?**
+This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the GitHub repository, in the Settings tab. On the Left hand side 
+  - From the source section drop-down menu, select the Master Branch
+  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
----
+The live link can be found here - https://code-institute-org.github.io/love-maths/
 
-Happy coding!
+
+## Credits 
+
+### Content 
+
+        * The text for the Home page was taken from [Steelfit](https://steelfitusa.com/blogs/health-and-wellness/calculate-tdee)
+        * Text used in read me and result page from [Macro Article](https://www.womenshealthmag.com/uk/food/weight-loss/a706111/counting-calculate-macros/)
+        * Code institute for the sample READ.md for layout
+        * W3 school online and stackoverflow for general ways to implament Navigation bar and style in css
+        * How to implement Session Storage from [YouTube](https://www.youtube.com/watch?v=x0VcigW9kN0&ab_channel=OpenJavaScript)
+
+
+### Media
+
+        * photos from [Pexels](https://www.pexels.com/)
+        * font from [Googlefonts](https.//www.googlefonts.com)
+        * favicon from [icons8](https://icons8.com/icons/set/html-favicon)
