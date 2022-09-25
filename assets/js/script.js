@@ -13,13 +13,13 @@ form.addEventListener('submit', function (event) {
     event.preventDefault();
 
 
-    //Make sure we get the correct values
-    console.log(gender);
-    console.log(weight);
-    console.log(height);
-    console.log(age);
-    console.log(activityLevel);
-    console.log(goal);
+    // //Make sure we get the correct values
+    // console.log(gender);
+    // console.log(weight);
+    // console.log(height);
+    // console.log(age);
+    // console.log(activityLevel);
+    // console.log(goal);
 
 const gender = event.target.gender.value;
 const weight = Number(event.target.weight.value);
