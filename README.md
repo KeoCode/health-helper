@@ -92,16 +92,11 @@ This Is brief intoduction in to what the site is about and about what it will ca
 
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
+- Steps used to deploy on Github through Pages section
 
-- The site was deployed to GitHub pages. The steps to deploy are as follows: 
-  - In the GitHub repository, in the Settings tab. On the Left hand side 
-  - From the source section drop-down menu, select the Master Branch
-  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
-
-The live link can be found here - https://code-institute-org.github.io/love-maths/
-
-
+![Screen shot of the github pages to deploy page](/assets/images/deployone.png)
+![Screen shot of the github once deployed](/assets/images/deployTwo.png)
+ 
 ## Credits 
 
 ### Content 
