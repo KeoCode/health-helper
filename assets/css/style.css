@@ -10,7 +10,7 @@ body {
 .text-box {
     background-color: #dcfc8f;
     border-radius: 14%;
-    padding: 2%;
+    padding: 5%;
 }
 
 /* round the edges of image and make size responsive*/
