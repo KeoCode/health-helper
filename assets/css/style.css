@@ -8,7 +8,7 @@ body {
 
 /*give the text box on index.html page a border and padding so text stays inside border */
 .text-box {
-    background-color:#dcfc8f;
+    background-color: #dcfc8f;
     border-radius: 14%;
     padding: 2%;
 }
@@ -19,6 +19,7 @@ img {
     padding: 20px;
     border-radius: 15%;
 }
+
 /* style the form */
 #form-box {
     padding: 5%;
@@ -26,6 +27,7 @@ img {
     background-color: #dcfc8f;
     border-radius: 20%;
 }
+
 /* change font for heading and add margin */
 h1 {
     font-family: "Courgette", sans-serif;
@@ -41,7 +43,7 @@ div {
 }
 
 /* added style to submi button*/
-#button{
+#button {
     background-color: white;
     margin-bottom: 0.75rem;
     margin-right: 0.75rem;

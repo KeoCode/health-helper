@@ -1,4 +1,4 @@
-// save 
+// get values results for results page from session storage
 const bmrResult = sessionStorage.getItem('bmr');
 const tdeeResult = sessionStorage.getItem('tdee');
 const calVal = sessionStorage.getItem('calories');
