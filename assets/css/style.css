@@ -1,3 +1,4 @@
+/* Style the background of all pages and centre content*/
 body {
     background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
     text-align: center;
@@ -5,43 +6,41 @@ body {
     margin: auto;
 }
 
+/*give the text box on index.html page a border and padding so text stays inside border */
 .text-box {
     background-color:#dcfc8f;
     border-radius: 14%;
     padding: 2%;
 }
 
+/* round the edges of image and make size responsive*/
 img {
     width: 90%;
     padding: 20px;
     border-radius: 15%;
 }
-
-.questions {
-    border: 1px solid gray;
-    padding: 30px;
-}
-
+/* style the form */
 #form-box {
     padding: 5%;
     margin: auto;
     background-color: #dcfc8f;
     border-radius: 20%;
-
 }
-
+/* change font for heading and add margin */
 h1 {
     font-family: "Courgette", sans-serif;
     margin-top: 5%;
     margin-bottom: 5%;
 }
 
+/* declare font for other headings and divs */
 h2,
 h3,
 div {
     font-family: 'Times New Roman', Times, serif;
 }
 
+/* added style to submi button*/
 #button{
     background-color: white;
     margin-bottom: 0.75rem;
@@ -51,6 +50,7 @@ div {
     border-radius: 9999px;
 }
 
+/* added background and border styling to the result divs*/
 .results {
     background-color: #dcfc8f;
     margin-top: 5%;
@@ -63,10 +63,13 @@ div {
     border: 1px solid #85FFBD;
 }
 
+/* added a bit of space in margin so not as squashed together and font is bolder*/
 form {
     margin-bottom: 1%;
     font-weight: 600;
 }
+
+/* add style to the information text box on results page*/
 .info-box {
     background-color: #dcfc8f;
     border-radius: 14%;

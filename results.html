@@ -2,15 +2,21 @@
 <html lang="en">
 
 <head>
+    <!--meta data fro browser-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link to CSS sheet-->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--Linkto favicon icons-->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
     <link rel="manifest" href="assets/images/site.webmanifest">
     <title>Health Helper</title>
+
+    <!--Link to googlefonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
@@ -21,15 +27,16 @@
     <main>
         <h1>Health Helper</h1>
 
+        <!--Display results from javascript calculations-->
         <h2>Your Results are in!</h2>
         <div class="results">
             <div>Your TDEE:<span id="tdee"></span></div>
             <div>Your BMR:<span id="bmr"></span></div>
         </div>
-           <div class="results">
-             <div>Your Calorie Need to meet your Goal:<span id="calories"></span></div>
-           </div>
-           <img src="assets/images/GreenVeg.jpg" alt="Picture of Berries and a measuring tape">
+        <div class="results">
+            <div>Your Calorie Need to meet your Goal:<span id="calories"></span></div>
+        </div>
+        <img src="assets/images/GreenVeg.jpg" alt="Picture of Berries and a measuring tape">
         <h2>Your Macros Broken down</h2>
         <div class="results">
             <div>Calories in carbohydrates:<span id="carbsCal"></span></div>
@@ -43,47 +50,58 @@
             <div>Calories in protein:<span id="proteinCal"></span></div>
             <div>Grams in protein:<span id="proteinGram"></span></div>
         </div>
-<div class="text-box">
-        <h3>What is TDEE?</h3>
-        <p>Wondering what is TDEE? TDEE stands for Total Daily Energy Expenditure. It is the total number of calories
-            you
-            burn in a given day. </p>
 
-        <h3>Basal Metabolic Rate (BMR)</h3>
-        <p>Basal metabolic rate refers to the number of calories your body burns each day to keep you alive. BMR does
-            not
-            include physical activity, the process of digestion, or things like walking from one room to another.</p>
+        <!--Information text to explain what results mean-->
+        <div class="text-box">
+            <h3>What is TDEE?</h3>
+            <p>Wondering what is TDEE? TDEE stands for Total Daily Energy Expenditure. It is the total number of
+                calories
+                you
+                burn in a given day. </p>
 
-        <p> Basically, BMR is the number of calories your body would expend in a 24 hour period if all you did was lay
-            in
-            bed all day long. This is the absolute bare minimum of calories it takes to ensure your survival.</p>
+            <h3>Basal Metabolic Rate (BMR)</h3>
+            <p>Basal metabolic rate refers to the number of calories your body burns each day to keep you alive. BMR
+                does
+                not
+                include physical activity, the process of digestion, or things like walking from one room to another.
+            </p>
 
-        <h3>What are Macros</h3>
-        <p>The idea behind the macro diet is pretty simple: Instead of staying under a calorie threshold, you focus on
-            getting a certain number (typically grams) of macronutrients—protein, carbohydrates, and fat—instead.
-            Depending
-            on your goals, you can adjust the amounts of protein, carbohydrates, and fats you consume to slim down,
-            build
-            muscle, or maintain your weight.</p>
+            <p> Basically, BMR is the number of calories your body would expend in a 24 hour period if all you did was
+                lay
+                in
+                bed all day long. This is the absolute bare minimum of calories it takes to ensure your survival.</p>
 
-        <h3>For Example:</h3>
-        <p>
-            Carbohydrates: Healthy carbs typically contain lots of fiber, including whole grains, legumes, leafy greens,
-            potatoes, and fruit.
-        </p>
-        <p>
-            Proteins: Good picks for healthy, lean proteins: chicken, turkey grass-fed beef, fatty fish (like salmon and
-            mackerel), eggs, and plant-based options like beans and chickpeas.
-        </p>
-        <p>
-            Fats: Satiating, healthy fats include olive oil, avocado, nuts, and seeds.
-        </p>
-    </div>
+            <h3>What are Macros</h3>
+            <p>The idea behind the macro diet is pretty simple: Instead of staying under a calorie threshold, you focus
+                on
+                getting a certain number (typically grams) of macronutrients—protein, carbohydrates, and fat—instead.
+                Depending
+                on your goals, you can adjust the amounts of protein, carbohydrates, and fats you consume to slim down,
+                build
+                muscle, or maintain your weight.</p>
+
+            <h3>For Example:</h3>
+            <p>
+                Carbohydrates: Healthy carbs typically contain lots of fiber, including whole grains, legumes, leafy
+                greens,
+                potatoes, and fruit.
+            </p>
+            <p>
+                Proteins: Good picks for healthy, lean proteins: chicken, turkey grass-fed beef, fatty fish (like salmon
+                and
+                mackerel), eggs, and plant-based options like beans and chickpeas.
+            </p>
+            <p>
+                Fats: Satiating, healthy fats include olive oil, avocado, nuts, and seeds.
+            </p>
+        </div>
+        <!--Footer for disclaimer-->
         <footer>
             <p>Disclaimer: Health Helper is for informational purposes only. Consult a healthcare provider before making
                 health decisions.</p>
         </footer>
 
+        <!--Link to javascript file-->
         <script src="assets/js/results.js">
 
         </script>
