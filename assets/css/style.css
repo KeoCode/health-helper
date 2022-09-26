@@ -6,7 +6,7 @@ body {
     margin: auto;
 }
 
-/*give the text box on index.html page a border and padding so text stays inside border */
+/*give the text box on a border and padding so text stays inside border */
 .text-box {
     background-color: #dcfc8f;
     border-radius: 14%;
@@ -32,7 +32,6 @@ img {
 h1 {
     font-family: "Courgette", sans-serif;
     margin-top: 5%;
-    margin-bottom: 5%;
 }
 
 /* declare font for other headings and divs */
@@ -71,8 +70,15 @@ form {
     font-weight: 600;
 }
 
-/* add style to the information text box on results page*/
+/* add style to the information text box*/
 .info-box {
     background-color: #dcfc8f;
     border-radius: 14%;
+    padding: 5%;
 }
+
+@media only screen and (max-width: 600px) {
+    input[type=radio] {
+        margin: 10px;
+        }
+    }

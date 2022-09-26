@@ -1,6 +1,6 @@
 let form = document.getElementById('form');
 
-// //Get form values
+// //Get form values orginal method
 // const gender = document.querySelector('input[name="gender"]:checked').value;
 // const weight = parseFloat(document.getElementById('weight').value);
 // const height = parseFloat(document.getElementById('height').value);
