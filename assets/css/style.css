@@ -81,4 +81,8 @@ form {
     input[type=radio] {
         margin: 10px;
         }
+
+    #form-box {
+        padding: 8%;
+    }    
     }

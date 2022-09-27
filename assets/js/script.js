@@ -1,25 +1,9 @@
 let form = document.getElementById('form');
 
-// //Get form values orginal method
-// const gender = document.querySelector('input[name="gender"]:checked').value;
-// const weight = parseFloat(document.getElementById('weight').value);
-// const height = parseFloat(document.getElementById('height').value);
-// const age = parseInt(document.getElementById('age').value);
-// const activityLevel = document.querySelector('input[name="activity-level"]:checked').value;
-// const goal = document.querySelector('input[name="goal"]:checked').value;
 
 //Form Event Listener
 form.addEventListener('submit', function (event) {
     event.preventDefault();
-
-
-    // //Make sure we get the correct values
-    // console.log(gender);
-    // console.log(weight);
-    // console.log(height);
-    // console.log(age);
-    // console.log(activityLevel);
-    // console.log(goal);
 
     //Get form values
     const gender = event.target.gender.value;
@@ -39,14 +23,6 @@ form.addEventListener('submit', function (event) {
         let tdee = 0;
         let calories = 0;
 
-
-        //Orignal method: Calculate Basal metabolic Rate (BMR) by determining if it is female or male and calculating accordingly.
-        // if (gender === 'female') {
-        //     bmr = 655 + (9.6 * weight) + (1.8 * height) - (4.7 * age);
-        // } else {
-        //     bmr = 66 + (13.7 * weight) + (5 * height) - (6.8 * age);
-        // }
-
         //Calculate Basal metabolic Rate (BMR) by determining if it is female or male and calculating accordingly.
         let bmrMap = {
             "female": 655 + (9.6 * weight) + (1.8 * height) - (4.7 * age),
@@ -56,19 +32,6 @@ form.addEventListener('submit', function (event) {
         bmr = bmrMap[gender];
 
         console.log(bmr);
-
-        //Get TDEE (Total Daily Energy Expenditure), BMr times activity level orignal method
-        // if (activityLevel === "sedentary") {
-        //     tdee = bmr * 1.2;
-        // } else if (activityLevel === "lightly-active") {
-        //     tdee = bmr * 1.375;
-        // } else if (activityLevel === "moderately-active") {
-        //     tdee = bmr * 1.55;
-        // } else if (activityLevel === "very-active") {
-        //     tdee = bmr * 1.725;
-        // } else {
-        //     tdee = bmr * 1.9;
-        // }
 
         //Get TDEE (Total Daily Energy Expenditure), BMR times activity level
         let tdeeMap = {
@@ -94,19 +57,6 @@ form.addEventListener('submit', function (event) {
 
         calories = calorieMap[goal];
 
-        // work out calories for each goal orginal method
-        // if (goal === "loseOne") {
-        //     calories = tdee - 500;
-        // } else if (goal === "loseTwo") {
-        //     calories = tdee - 1000;
-        // } else if (goal === "gain") {
-        //     calories = tdee + 300;
-        // } else if (goal === "maintain") {
-        //     calories = tdee;
-        // }
-        // console.log(parseInt(calories));
-
-
         // Workout calories and grams for macros
         let carbsCal = calories * 0.3;
         let carbGram = carbsCal / 4;
@@ -116,15 +66,6 @@ form.addEventListener('submit', function (event) {
 
         let proteinCal = calories * 0.4;
         let proteinGram = carbsCal / 4;
-
-        //Log results to console to ensure is correctly calculated
-        // console.log(parseInt(calories));
-        // console.log(parseInt(carbsCal));
-        // console.log(parseInt(carbGram));
-        // console.log(parseInt(fatCal));
-        // console.log(parseInt(fatGram));
-        // console.log(parseInt(proteinCal));
-        // console.log(parseInt(proteinGram));
 
         //Ensure the results are intgers
         const bmrValue = parseInt(bmr);
@@ -148,7 +89,6 @@ form.addEventListener('submit', function (event) {
         sessionStorage.setItem('proteinCal', proteinCalValue);
         sessionStorage.setItem('proteinGram', proteinGramValue);
     }
-
 
     //Redirect to results.html
     window.location.href = "results.html";
