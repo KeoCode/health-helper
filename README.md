@@ -14,7 +14,7 @@ Based on the Goal you have selected Health Helper will advise the calories you s
 
 Lastly, Health Helper will go one step futher to give you the best chance at success by breaking down the best ratio of your Macronutrients. By Tracking and meeting macro targets it not only be priortising nutrient dense foods but can supply your body with exactly what it needs for fuel. The Main 3 Macros are Fats, Carbohydrates and Protein. The calculater will tell how much of each you should use in both Calories amounts and Gram amounts to make it twice as accessable to track.
 
-![Screenshot of Main PAge](/assets/images/siteScreenshot.png)
+![Screenshot of Main PAge](/assets/images/site-screenshot.png)
 
 ### Existing Features
 
@@ -28,7 +28,7 @@ Lastly, Health Helper will go one step futher to give you the best chance at suc
 
 This Is brief intoduction in to what the site is about and about what it will calculate. 
 
-![Introduction Text](/assets/images/introText.png)
+![Introduction Text](/assets/images/intro-text.png)
 
 - __The image__
 
@@ -64,7 +64,7 @@ This Is brief intoduction in to what the site is about and about what it will ca
 
 - I Have added all Form fields as a requirement as all data is needed to make accurate calculations, I also have added a minimum length and a max length to certain fields to ensure it will validate that the correct data is entered inte right field.
 
-- I have commented out the console log's in my code but i reguarly use the to double check the formula's are correct.
+- I had commented out the console log's in my code but i reguarly use the to double check the formula's are correct.
 
 - The Screen is responsive as can be seen here in the AmIREsponsive screen shots on all tested devices.
 
@@ -79,27 +79,27 @@ This Is brief intoduction in to what the site is about and about what it will ca
 - HTML
     - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-maths%2F)
 
-    ![HTML Validation](/assets/images/htmlValidatorScreenshot.png)
+    ![HTML Validation](/assets/images/html-validator-screenshot.png)
 - CSS
     - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-maths%252F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
-![CSS Validation](/assets/images/cssValidatorScreenshot.png)
+![CSS Validation](/assets/images/css-validator-screenshot.png)
 
 - JavaScript
     - No errors were found when passing through the official [Jshint validator](https://jshint.com/)
 
-![Javascript Validation](/assets/images/jshintScreenshot.png)
+![Javascript Validation](/assets/images/jshint-screenshot.png)
 
 - Lighthouse Accessibility testing
 
-![Lighthouse results](/assets/images/lighthouseScreenshot.png)
+![Lighthouse results](/assets/images/lighthouse-screenshot.png)
 
 ## Deployment
 
 - Steps used to deploy on Github through Pages section
 
 ![Screen shot of the github pages to deploy page](/assets/images/deployone.png)
-![Screen shot of the github once deployed](/assets/images/deployTwo.png)
+![Screen shot of the github once deployed](/assets/images/deploy-two.png)
  
 ## Credits 
 
